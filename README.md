@@ -27,6 +27,6 @@ L’utilisateur peut :
 ---
 
 ## 📸 Aperçu  
-*(Ajoute ici des captures d’écran ou un GIF de ton application)*  
+
 
 ---
