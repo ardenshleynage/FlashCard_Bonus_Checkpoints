@@ -1,33 +1,35 @@
 # 📚 Flashcard Quiz App (Android)
 
-Une application Android simple de type **flashcards** permettant aux utilisateurs de répondre à une question à choix multiples.  
-L’utilisateur peut :  
-- Afficher ou masquer les choix de réponses via un bouton.  
-- Sélectionner une réponse et voir immédiatement si elle est correcte ✅ (vert) ou incorrecte ❌ (rouge).  
-- Visualiser la bonne réponse lorsqu’une mauvaise est choisie.  
+A simple Android **flashcard-style** application that allows users to answer a multiple-choice question.  
+The user can:  
+- Show or hide the answer choices using a button.  
+- Select an answer and immediately see if it is correct ✅ (green) or incorrect ❌ (red).  
+- View the correct answer when a wrong one is chosen.  
+- **Quick reset**: tap on the question text to reset all answers. 🔄  
 
 ---
 
-## 🚀 Fonctionnalités
-- Affichage d’une question et de 3 réponses possibles.  
-- Bouton toggle pour **afficher/cacher les choix**.  
-- Gestion des interactions :  
-  - Réponse correcte → fond **vert**.  
-  - Réponse incorrecte → fond **rouge** + mise en évidence de la bonne réponse.  
-- **Reset pratique** : un appui sur le texte de la question réinitialise toutes les réponses (couleur et cliquabilité).  
-- Interface minimaliste et intuitive. 
+## 🚀 Features
+- Display of a question with 3 possible answers.  
+- Toggle button to **show/hide choices**.  
+- Interaction handling:  
+  - Correct answer → **green** background.  
+  - Wrong answer → **red** background + highlight of the correct one.  
+- **Convenient reset**: tapping the question text resets all answers (color and clickability).  
+- Minimalistic and intuitive interface.  
 
 ---
 
-## 🛠️ Technologies utilisées
-- **Langage** : Kotlin  
-- **IDE** : Android Studio  
-- **UI** : XML Layouts (RelativeLayout, TextView, ImageView)  
-- **Ressources graphiques** : Vector Drawables (`hide_icon`, `show_icon`)  
+## 🛠️ Technologies Used
+- **Language**: Kotlin  
+- **IDE**: Android Studio  
+- **UI**: XML Layouts (RelativeLayout, TextView, ImageView)  
+- **Graphic resources**: Vector Drawables (`hide_icon`, `show_icon`)  
 
 ---
 
-## 📸 Aperçu  
+## 📸 Preview  
 ---
+
 ![fb](https://github.com/user-attachments/assets/26840fbb-45ad-413e-b09d-dffe18a0f13b)
 
