@@ -14,7 +14,8 @@ L’utilisateur peut :
 - Gestion des interactions :  
   - Réponse correcte → fond **vert**.  
   - Réponse incorrecte → fond **rouge** + mise en évidence de la bonne réponse.  
-- Interface minimaliste et intuitive.  
+- **Reset pratique** : un appui sur le texte de la question réinitialise toutes les réponses (couleur et cliquabilité).  
+- Interface minimaliste et intuitive. 
 
 ---
 
