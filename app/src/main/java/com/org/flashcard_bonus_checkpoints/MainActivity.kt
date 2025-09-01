@@ -11,6 +11,8 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     private var areChoicesVisible = true
+    private lateinit var allAnswers: List<TextView>
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -19,6 +21,8 @@ class MainActivity : AppCompatActivity() {
         val fa1 = findViewById<TextView>(R.id.flashcard_answer1)
         val fa2 = findViewById<TextView>(R.id.flashcard_answer2)
         val fa3 = findViewById<TextView>(R.id.flashcard_answer3)
+        val question = findViewById<TextView>(R.id.flashcard_question)
+        allAnswers = listOf(fa1, fa2, fa3)
 
         val ca = fa3
         val wa = listOf(fa1, fa2)
@@ -27,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         val greenColor = ContextCompat.getColor(this, android.R.color.holo_green_light)
         val redColor = ContextCompat.getColor(this, android.R.color.holo_red_light)
 
-        val allAnswers = listOf(fa1, fa2, fa3)
+
 
         for (answer in allAnswers) {
             answer.setOnClickListener {
@@ -57,12 +61,25 @@ class MainActivity : AppCompatActivity() {
                 areChoicesVisible = true
             }
         }
+        question.setOnClickListener {
+            resetAnswers()
+        }
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.rootLayout)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+    }
+    private fun resetAnswers() {
+        val defaultColor = ContextCompat.getColor(this, R.color.Light_Orange)
+
+        for (answer in allAnswers) {
+            answer.setBackgroundColor(defaultColor)
+            answer.isClickable = true
+            answer.visibility = TextView.VISIBLE
+        }
+        areChoicesVisible = true
     }
 }
 
